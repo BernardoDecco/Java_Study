@@ -1,0 +1,2 @@
+The way that hashmap works is basically converting the key to a integer hash and than dividing this int by a specific value and the remainder of it will be the bucket index for the array of nodes. If a collision occurs in this bucket the nodes in this bucket will
+act as a linkedList, if the linkedList is too big (bigger than 8) on java8 the linkedList will be converted to a balanced tree lowering the complexity to O(log n) instead of O(n) 
